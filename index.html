@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Bissiness website</title>
-<link rel ="stylesheet" href="style.css">
+<link rel ="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!-- favicon -->
 <link rel="shortcut icon" href="img/favicon.ico.png">
@@ -85,42 +85,42 @@
 </div>
 
 <!-- About -->
-    <section id="about">
-        <div class="container" id="01">
-        <div class="row">
-            <div class="col-md-6"></div>
-            <h2>About Us</h2>
-            <div class="about-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<section id="about">
+    <div class="container" id="01">
+    <div class="row">
+        <div class="col-md-6"></div>
+        <h2>About Us</h2>
+        <div class="about-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.
+        </div>
+            <button type="button" class="btn btn-primary">Read more></button>
             </div>
-                <button type="button" class="btn btn-primary">Read more></button>
-                </div>
-            <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
             <p>Adobe Photoshop</p>
-            <div class="progress">
-            <div class="progress-bar" style="width: 80%;">80%</div>
-            </div>
-            <div class="col-md-6 skills-bar"></div>
-            <p>UI Design</p>
-            <div class="progress">
-            <div class="progress-bar" style="width: 85%;">85%</div>
-            </div>
-            <div class="col-md-6"></div>
-            <p>Word press</p>
-            <div class="progress">
-            <div class="progress-bar" style="width: 75%;">75%</div>
-            </div>
-            <div class="col-md-6"></div>
-            <p>GRAPIC Design</p>
-            <div class="progress">
-            <div class="progress-bar" style="width: 50%;">50%</div>
-            </div>
-            </div>
+        <div class="progress">
+        <div class="progress-bar" style="width: 80%;">80%</div>
+        </div>
+        <div class="col-md-6 skills-bar"></div>
+        <p>UI Design</p>
+        <div class="progress">
+        <div class="progress-bar" style="width: 85%;">85%</div>
+        </div>
+        <div class="col-md-6"></div>
+        <p>Word press</p>
+        <div class="progress">
+        <div class="progress-bar" style="width: 75%;">75%</div>
+        </div>
+        <div class="col-md-6"></div>
+        <p>GRAPIC Design</p>
+        <div class="progress">
+        <div class="progress-bar" style="width: 50%;">50%</div>
         </div>
         </div>
-    </section>
+    </div>
+    </div>
+</section>
 <!-- Services -->
-    <section id="services">
+<section id="services">
     <div class="container" id="02">
         <h1>Our Services</h1>
     <div class="row services">
@@ -210,19 +210,18 @@
     <h3>Founder / CEO</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ducimus aliquam explicabo eligendi eveniet nam perspiciatis.</p>
 </div>
-    </section>
+</section>
 
 <script>
-
-    $(function(){
-  $('a[href^="#"]'+'a:not(".carousel-control-prev,.carousel-control-next")').click(function(){
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
-  });
+$(function(){
+$('a[href^="#"]'+'a:not(".carousel-control-prev,.carousel-control-next")').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+});
 });
 </script>
 
